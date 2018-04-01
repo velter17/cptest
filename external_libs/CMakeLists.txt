@@ -1,0 +1,4 @@
+add_subdirectory(testlib)
+add_subdirectory(advanced_terminal_output)
+add_subdirectory(aixlog)
+add_subdirectory(boost_options_extended)

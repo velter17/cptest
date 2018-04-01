@@ -1,0 +1,11 @@
+file(GLOB_RECURSE CPTEST_TEST_ARCHIVE_SRC *.cpp)
+
+add_library(${CPTEST_TEST_ARCHIVE} STATIC
+    ${CPTEST_TEST_ARCHIVE_SRC}
+    )
+
+target_link_libraries(${CPTEST_TEST_ARCHIVE}
+    PUBLIC ${CPTEST_LIBS}
+    PUBLIC ${CPTEST_STATUS}
+    PUBLIC aixlog
+    )

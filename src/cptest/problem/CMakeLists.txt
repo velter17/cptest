@@ -1,0 +1,10 @@
+file(GLOB_RECURSE CPTEST_PROBLEM_SRC *.cpp)
+
+add_library(${CPTEST_PROBLEM} STATIC
+    ${CPTEST_PROBLEM_SRC}
+    )
+
+target_link_libraries(${CPTEST_PROBLEM}
+    PUBLIC ${CPTEST_LIBS}
+    PUBLIC ${CPTEST_STATUS}
+    )
